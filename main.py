@@ -8,7 +8,7 @@ def vmess(u,exp):
 
 
 # Menjalankan perintah "add-ws" dengan subprocess
-    process = subprocess.Popen(["add-ws"], stdout=subprocess.PIPE, stdin=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
+    process = subprocess.Popen(["/bin/add-ws"], stdout=subprocess.PIPE, stdin=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
 
     # Mengambil input dari pengguna
     username = u
