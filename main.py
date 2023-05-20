@@ -11,8 +11,8 @@ def vmess(u,exp):
     process = subprocess.Popen(["add-ws"], stdout=subprocess.PIPE, stdin=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
 
     # Mengambil input dari pengguna
-    username = input("username: ")
-    hari = input("exp: ")
+    username = u
+    hari = exp
 
     # Mengirim input ke perintah "add-ws"
     input_text = f"{username}\n{hari}\n"
